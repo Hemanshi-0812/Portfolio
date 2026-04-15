@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect fill="#6366f1" width="400" height="400"/>
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-weight="bold">Canva Designs</text>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="white" opacity="0.8">Social Media Graphics</text>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="white" opacity="0.8">Branding & Posters</text>
+  <circle cx="100" cy="300" r="30" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="300" cy="250" r="25" fill="#ec4899" opacity="0.7"/>
+  <rect x="50" y="320" width="80" height="4" fill="#10b981" opacity="0.7"/>
+  <rect x="270" y="330" width="60" height="4" fill="#f59e0b" opacity="0.7"/>
+</svg>

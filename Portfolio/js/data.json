@@ -1,0 +1,215 @@
+{
+  "personal": {
+    "name": "Hemanshi Bhayani",
+    "title": "Computer Engineering Student",
+    "heroDescription": "Passionate about coding, technology, and creating beautiful designs with Canva",
+    "description": "I am a computer engineering student interested in coding and technology. I enjoy learning new skills and working on practical projects. I'm a quick learner, a good team member, and eager to gain experience in the tech industry. I have a passion for design and creating visually appealing content using Canva.",
+    "interests": [
+      "Programming & Coding",
+      "Web Development",
+      "Data Analysis",
+      "Graphic Design with Canva",
+      "Reading Novels",
+      "Technology Innovation",
+      "Problem Solving",
+      "Continuous Learning"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        {
+          "name": "C",
+          "proficiency": 85
+        },
+        {
+          "name": "C++",
+          "proficiency": 75
+        },
+        {
+          "name": "Java",
+          "proficiency": 70
+        },
+        {
+          "name": "Python",
+          "proficiency": 80
+        }
+      ]
+    },
+    {
+      "category": "Web Technologies",
+      "items": [
+        {
+          "name": "HTML",
+          "proficiency": 90
+        },
+        {
+          "name": "CSS",
+          "proficiency": 85
+        },
+        {
+          "name": "JavaScript",
+          "proficiency": 75
+        }
+      ]
+    },
+    {
+      "category": "Tools & Technologies",
+      "items": [
+        {
+          "name": "VS Code",
+          "proficiency": 90
+        },
+        {
+          "name": "GitHub",
+          "proficiency": 80
+        },
+        {
+          "name": "Canva",
+          "proficiency": 85
+        },
+        {
+          "name": "Power BI",
+          "proficiency": 70
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Analog Watch (C Programming)",
+      "description": "A digital analog watch implementation using C programming. Features include time display, alarm functionality, and customizable settings. Demonstrates understanding of system programming and time management concepts.",
+      "technologies": ["C", "System Programming", "Time Functions"],
+      "github": "#",
+      "demo": "#",
+      "emoji": "⏰"
+    },
+    {
+      "title": "WriteVerse - Blogging Website (SGP Project)",
+      "description": "A comprehensive blogging platform developed as a Semester Group Project. Features user authentication, content management, and responsive design for an optimal reading experience.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Web Development"],
+      "github": "#",
+      "demo": "#",
+      "emoji": "📝"
+    },
+    {
+      "title": "DayFlow (Odoo Project)",
+      "description": "A workflow management system built using Odoo framework. Streamlines daily operations and task management with customizable modules and user-friendly interface.",
+      "technologies": ["Odoo", "Python", "Web Framework", "Database"],
+      "github": "#",
+      "demo": "#",
+      "emoji": "📊"
+    },
+    {
+      "title": "MyLearning Web (Sem 3 Project)",
+      "description": "An educational web platform developed as a semester project. Features interactive learning modules, progress tracking, and multimedia content delivery.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Web Development"],
+      "github": "#",
+      "demo": "#",
+      "emoji": "🎓"
+    }
+  ],
+  "education": [
+    {
+      "year": "2024 - 2028",
+      "degree": "B.Tech Computer Engineering",
+      "institution": "CHARUSAT University",
+      "description": "Currently pursuing Bachelor of Technology in Computer Engineering with a focus on software development, data structures, algorithms, and emerging technologies. CGPA: 6.9"
+    },
+    {
+      "year": "2022 - 2024",
+      "degree": "Class XII",
+      "institution": "SKV School Rajkot",
+      "description": "Completed Higher Secondary Education with excellent academic performance. Percentage: 87.23%"
+    },
+    {
+      "year": "2020 - 2022",
+      "degree": "Class X",
+      "institution": "Kanya Vidhyalaya Khamta",
+      "description": "Completed Secondary Education with outstanding results. Percentage: 87.66%"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Problem Solving Through Programming in C",
+      "issuer": "NPTEL",
+      "year": "2024",
+      "emoji": "📜"
+    },
+    {
+      "title": "Hackout'24 Hackathon",
+      "issuer": "DA-IICT",
+      "year": "2024",
+      "emoji": "🏆"
+    },
+    {
+      "title": "NPTEL Course Completion",
+      "issuer": "NPTEL",
+      "year": "2024",
+      "emoji": "🎓"
+    },
+    {
+      "title": "Power BI Certification",
+      "issuer": "Microsoft",
+      "year": "2024",
+      "emoji": "📊"
+    }
+  ],
+  "designWork": [
+    {
+      "title": "Canva Social Media Designs",
+      "category": "Modern Image",
+      "description": "Creative social media designs created using Canva for various platforms including Instagram, Facebook, and LinkedIn.",
+      "media": "assets/images/design-work/canva-designs.jpg",
+      "type": "image",
+      "uploadedImage": null
+    },
+    {
+      "title": "Digital Art & Graphics",
+      "category": "Modern Image",
+      "description": "Digital artwork featuring abstract concepts and modern graphic design elements.",
+      "media": "assets/images/design-work/digital-art.jpg",
+      "type": "image",
+      "uploadedImage": null
+    },
+    {
+      "title": "Presentation Templates",
+      "category": "Poster",
+      "description": "Professional presentation templates designed for business and educational purposes.",
+      "media": "assets/images/design-work/templates.jpg",
+      "type": "image",
+      "uploadedImage": null
+    },
+    {
+      "title": "Brand Identity Designs",
+      "category": "Poster",
+      "description": "Complete brand identity designs including logos, business cards, and branding materials.",
+      "media": "assets/images/design-work/branding.jpg",
+      "type": "image",
+      "uploadedImage": null
+    }
+  ],
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/hemanshibhayani",
+      "icon": "💼"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "icon": "🐙"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:hemanshibhayani81@gmail.com",
+      "icon": "📧"
+    },
+    {
+      "name": "Phone",
+      "url": "tel:+919313792431",
+      "icon": "📱"
+    }
+  ]
+}

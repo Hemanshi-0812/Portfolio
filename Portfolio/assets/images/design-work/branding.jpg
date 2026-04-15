@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect fill="#ec4899" width="400" height="400"/>
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="white" font-weight="bold">Branding</text>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="white" opacity="0.8">Logo & Identity</text>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="16" fill="white" opacity="0.8">Design Work</text>
+  <circle cx="200" cy="200" r="60" fill="#6366f1" opacity="0.5"/>
+  <text x="200" y="210" dominant-baseline="middle" text-anchor="middle" font-size="36" fill="white" font-weight="bold">H</text>
+  <rect x="80" y="300" width="80" height="8" fill="#8b5cf6" opacity="0.7"/>
+  <rect x="240" y="315" width="100" height="8" fill="#10b981" opacity="0.7"/>
+  <circle cx="120" cy="350" r="15" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="280" cy="345" r="12" fill="#06b6d4" opacity="0.8"/>
+</svg>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- EmailJS Library (required for contact form email sending) -->
+    <!-- Replace with the latest version if needed; this is a stable 3.x CDN build. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="#design" class="nav-link">Design Work</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-icon">☀️</span>
+            </div>
+            <button class="edit-toggle" id="editToggle" style="display: none;">
+                <span class="edit-icon">✏️</span>
+                <span class="edit-text">Edit Portfolio</span>
+            </button>
+            <button class="save-button" id="saveButton" style="display: none;">
+                <span class="save-icon">💾</span>
+                <span class="save-text">Save Changes</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-editable="true">Hi, I'm Hemanshi Bhayani</h1>
+            <p class="hero-subtitle">
+                I'm a <span class="typing-text" id="typingText" data-editable="true">Computer Engineering Student</span>
+            </p>
+            <p class="hero-description" data-editable="true">Passionate about coding, technology, and creating beautiful designs with Canva</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll down</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="aboutDescription" data-editable="true"></p>
+                    <div class="interests">
+                        <h3 data-editable="true">Interests & Goals</h3>
+                        <ul id="interests"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container" id="skillsContainer"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline" id="educationTimeline"></div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid" id="achievementsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Design Work Section -->
+    <section id="design" class="design-work">
+        <div class="container">
+            <h2 class="section-title">Design Work</h2>
+            <div class="design-gallery" id="designGallery"></div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p data-editable="true">Download my resume to learn more about my experience and qualifications.</p>
+                <div class="resume-buttons">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download id="downloadResumeBtn">Download Resume</a>
+                    <button class="btn btn-secondary" onclick="previewResume()">Preview Resume</button>
+                </div>
+                <div class="resume-upload" id="resumeUploadSection" style="display: none;">
+                    <h4>Upload New Resume</h4>
+                    <input type="file" id="resumeFileInput" accept=".pdf" style="margin: 10px 0;">
+                    <button class="btn btn-primary" onclick="uploadResume()">Upload Resume</button>
+                    <p style="font-size: 0.9rem; color: var(--text-dark); opacity: 0.7; margin-top: 10px;">
+                        Upload a PDF file to replace your current resume.
+                    </p>
+                </div>
+                <div id="resumePreview" class="resume-preview" style="display: none;">
+                    <iframe id="resumeIframe" src="" width="100%" height="600"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3 data-editable="true">Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span data-editable="true" id="contactEmail">hemanshibhayani81@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span data-editable="true" id="contactPhone">+91-9313792431</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span data-editable="true" id="contactLinkedIn">linkedin.com/in/hemanshibhayani</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span data-editable="true" id="contactLocation">Rajkot, Gujarat, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3 data-editable="true">Connect With Me</h3>
+                        <div class="social-icons" id="socialLinks"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Hemanshi Bhayani. All rights reserved.</p>
+            <p>Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-media" id="lightboxMedia"></div>
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <span id="lightboxCategory" class="category-badge"></span>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
